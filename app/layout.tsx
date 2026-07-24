@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "@fontsource-variable/manrope";
 import "./globals.css";
+import "./header-polish.css";
 
 export const metadata: Metadata = {
   title: {
