@@ -41,7 +41,7 @@ export function Header({ active = "home" }: HeaderProps) {
           <span className="button button-ghost login-placeholder" title="Portal de clientes">
             Login <span aria-hidden="true">→</span>
           </span>
-          <Link className="button button-primary" href="#demo">
+          <Link className="button button-dark nav-demo-button" href="#demo">
             Solicitar Demo
           </Link>
         </div>
