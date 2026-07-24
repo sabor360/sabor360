@@ -1,0 +1,109 @@
+/* Petite, Sunday-inspired header treatment. */
+.site-header,
+.legal-header {
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.06);
+}
+
+.site-header {
+  backdrop-filter: blur(16px);
+}
+
+.nav-shell {
+  height: 74px;
+}
+
+.brand-link img {
+  width: 112px;
+}
+
+.desktop-nav {
+  gap: 34px;
+  margin-left: clamp(28px, 5vw, 84px);
+  margin-right: auto;
+}
+
+.desktop-nav a {
+  color: rgba(18, 18, 18, 0.82);
+  font-size: 13.5px;
+  font-weight: 750;
+  transition: color 180ms ease;
+}
+
+.desktop-nav a::after {
+  bottom: -8px;
+  height: 1.5px;
+}
+
+.desktop-nav a:hover,
+.desktop-nav a.is-active {
+  color: var(--ink);
+}
+
+.desktop-actions {
+  gap: 12px;
+}
+
+.desktop-actions .button {
+  font-size: 13.5px;
+  min-height: 44px;
+  padding: 0 21px;
+}
+
+.login-placeholder {
+  background: #fff;
+  border-color: rgba(18, 18, 18, 0.12);
+}
+
+.nav-demo-button {
+  overflow: hidden;
+  position: relative;
+}
+
+.nav-demo-button::after {
+  background: var(--orange);
+  border-radius: 999px;
+  content: "";
+  height: 18px;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  transform: rotate(15deg);
+  width: 3px;
+}
+
+.hero {
+  min-height: min(830px, calc(100svh - 74px));
+}
+
+@media (max-width: 1120px) {
+  .desktop-nav {
+    gap: 24px;
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-shell {
+    height: 70px;
+  }
+
+  .brand-link img {
+    width: 104px;
+  }
+
+  .menu-toggle {
+    height: 42px;
+    width: 42px;
+  }
+
+  .mobile-nav nav > a:not(.button) {
+    font-size: 18px;
+    padding: 16px 0;
+  }
+
+  .mobile-nav .button {
+    margin: 18px 0 24px;
+    min-height: 46px;
+  }
+}
